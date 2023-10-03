@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #efebeb;
+}
+
+/* 头部 */
+header {
+    background-color: #fff;
+}
+
+/* 设置整体内容容器大小 */
+.top-wrapper,
+main,
+.footer-content,
+#footer-data,
+.bottom-charts-wrapper {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/* 头部容器 */
+.top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+/* 头部右侧容器  */
+.top-right {
+    display: flex;
+}
+
+/* 跳转logo */
+header a,
+#footer-data>a {
+    display: block;
+    color: #fff;
+    background-color: red;
+    text-decoration: none;
+    width: 109px;
+    height: 37px;
+    font-size: 5px;
+    text-align: center;
+    line-height: 37px;
+}
+
+/* 头部右侧阿里图标 icon*/
+.icon {
+    margin-right: 40px;
+    line-height: 37px;
+}
+
+/* 头部右侧阿里图标 单个icon */
+.icon i {
+    margin-right: 10px;
+}
+
+.icon i:last-child {
+    margin-right: 0px;
+}
+
+/* 主体顶部导航布局 */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 180px;
+}
+
+/* 标题 */
+h1 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 10px;
+    color: gray;
+}
+
+/* 导航右侧 */
+.nav-right {
+    position: relative;
+}
+
+/* 导航右侧 链接 */
+.nav-right li{
+    list-style: none;
+    float: left;
+    width: 95px;
+    height: 30px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 导航右侧 滑动条 随鼠标移动 */
+#move {
+    width: 95px;
+    height: 2px;
+    background-color: rgb(139, 136, 136);
+    position: absolute;
+    left: 0;
+    top: calc(50% + 20.8px / 2);
+}
+
+
+/* 主体中间*/
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+/* 设置两个容器 */
+.main-content>div {
+    width: 560px;
+    height: 288px;
+    background-color: #fff;
+}
+
+/* 轮播图容器 */
+#swiper {
+    /* 用于给箭头提供定位 */
+    position: relative;
+    width: 540px;
+    height: 260px;
+    overflow: hidden;
+    top: 10px;
+    left: 10px;
+}
+
+/* 轮播图图片容器 */
+#image {
+    /* 图片横向排列 */
+    display: flex;
+    /* 开启定位 */
+    position: relative;
+}
+
+#image li {
+    list-style: none;
+}
+
+/* 每个轮播图图片 */
+#image img {
+    width: 540px;
+    height: 260px;
+    /* 图片不会自动增长 */
+    flex-grow: 0;
+    /* 图片不会自动缩小 */
+    flex-shrink: 0;
+}
+
+/* 轮播图图片箭头 */
+#arrow-left {
+    position: absolute;
+    width: 22px;
+    height: 40px;
+    top: 40%;
+    left: 2px;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(26, 25, 25);
+}
+
+#arrow-right {
+    position: absolute;
+    width: 22px;
+    height: 40px;
+    top: 40%;
+    right: 2px;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(26, 25, 25);
+}
+
+
+/* 轮播图圆点容器 */
+#drop {
+    position: absolute;
+    bottom: 11px;
+    left: 43%;
+}
+
+/* 轮播图圆点  */
+#drop div {
+    float: left;
+    margin: 0 5px;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(214, 210, 210);
+}
+
+/* 轮播图圆点 active */
+#drop .active {
+    background-color: white;
+    padding-top: 3px;
+    transform: translateY(-3px);
+}
+
+
+/* 右侧数据顶部 */
+.data-top {
+    height: 100px;
+    border-bottom: 1px solid gray;
+}
+
+/* 标题 */
+span {
+    font-size: 18px;
+    color: rgb(121, 119, 119);
+    margin-left: 50px;
+    line-height: 100px;
+}
+
+/* 按钮 */
+.data-top>button {
+    height: 40px;
+    width: 95px;
+    background-color: #fff;
+    border-color: #efebeb;
+    margin-left: 210px;
+}
+
+/* 右侧数据内容 */
+table {
+    width: 470px;
+    height: 177px;
+    margin: 0 auto;
+}
+
+td,
+th {
+    text-align: left;
+}
+
+
+td>button {
+    width: 65px;
+    height: 30px;
+    background-color: rgb(29, 163, 118);
+    border: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* 主体顶部表格大容器 */
+#top-charts {
+    height: 342px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+
+/* 主体底部表格容器 */
+.bottom-charts-wrapper {
+    height: 375px;
+    background-color: #efebeb;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 57px;
+}
+
+/*  主体底部单个表格容器 */
+#bottom-left-charts,
+#bottom-right-charts {
+    width: 560px;
+    height: 375px;
+    background-color: #fff;
+}
+
+
+/* 底部大容器 */
+footer {
+    height: 290px;
+    background-color: black;
+}
+
+/* 底部中间容器 */
+.footer-wrap {
+    background-color: rgb(32, 32, 32);
+}
+
+/* 底部内容容器 */
+.footer-content {
+    height: 255px;
+    display: flex;
+    /* 整体底部内容垂直居中 */
+    align-items: center;
+}
+
+/* 底部内容 */
+#footer-data {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 180px;
+}
+
+#footer-data li,
+#footer-data li>a {
+    list-style: none;
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 12px;
+}

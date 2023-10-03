@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试</title>
+    <!-- 引入favicon -->
+    <link rel="shortcut icon" href="/asset/img/2.jpeg" />
+    <!-- 引入样式表 -->
+    <link rel="stylesheet" href="test.css">
+
+    <!-- 引入阿里图标 -->
+    <link rel="stylesheet" href="asset/font_3945732_4i9fgrymm19/iconfont.css">
+    <!-- 引入echarts依赖包 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.4.1/echarts.js"></script>
+
+    <!-- 引入axios -->
+    <script crossorigin="anonymous" src="https://cdn.bootcdn.net/ajax/libs/axios/1.5.0/axios.js"></script>
+
+    <!-- 引入js文件 -->
+    <script src="test.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <!-- 头部容器 -->
+        <div class="top-wrapper">
+
+            <!-- 头部左侧跳转logo -->
+            <a href="javascript:;">LOGO</a>
+            <!-- 头部右侧容器 -->
+            <div class="top-right">
+                <!-- 头部右侧阿里图标 -->
+                <div class="icon">
+                    <i class="iconfont icon-shezhixitongshezhigongnengshezhishuxing"></i>
+                    <i class="iconfont icon-lingdang1"></i>
+                </div>
+
+                <!-- 头部右侧跳转logo -->
+                <a href="javascript:;">Log Out</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主体 -->
+    <main>
+        <!-- 主体顶部导航布局 -->
+        <nav>
+            <!-- 导航左侧 -->
+            <div class="nav-left">
+                <!-- 标题 -->
+                <h1>Audience Overview</h1>
+                <h3>Roseville, CA</h3>
+            </div>
+
+            <!-- 导航右侧-->
+            <ul class="nav-right">
+                <li>DASSDRD</li>
+                <li>AGSFGGD</li>
+                <li>SGDSDGS</li>
+                <li>HRTSF</a>
+                <li>RNFGSD</li>
+                <!-- 滑动条 -->
+                <li id="move"></li>
+            </ul>
+        </nav>
+
+        <!-- 主体中间 -->
+        <div class="main-content">
+            <!-- 左侧轮播图容器 -->
+            <div class="swiper-wrap">
+                <div id="swiper">
+                    <!-- 轮播图图片容器 -->
+                    <ul id="image">
+                        <!-- <li><a href="#"><img src="asset/img/x.jpeg"></a> </li> -->
+                    </ul>
+
+                    <!-- 轮播图箭头 -->
+                    <div id="arrow-left">&lt;</div>
+                    <div id="arrow-right">&gt;</div>
+
+                    <!-- 轮播图圆点容器 -->
+                    <div id="drop">
+                        <!-- <div class="active"></div> -->
+                    </div>
+                </div>
+            </div>
+
+            <!--右侧数据容器  -->
+            <div class="data-wrapper">
+                <!-- 右侧数据顶部 -->
+                <div class="data-top">
+                    <!-- 标题 -->
+                    <span>Support Requests</span>
+                    <!-- 按钮 -->
+                    <button type="button">View All</button>
+                </div>
+
+                <!-- 右侧数据内容 -->
+                <table style="table-layout: fixed;">
+                    <tr>
+                        <th>TIME</th>
+                        <th colspan="3">USER NAME</th>
+                        <th>STATUS</th>
+                    </tr>
+                    <tr>
+                        <td>9.45pm</td>
+                        <td colspan="3">shgiel@da.com</td>
+                        <td><button>Solved</button></td>
+                    </tr>
+                    <tr>
+                        <td>9.45pm</td>
+                        <td colspan="3">shgiel@da.com</td>
+                        <td><button>Solved</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- 主体顶部表格容器 -->
+
+        <div id="top-charts"></div>
+
+        <!-- 主体底部表格容器-->
+        <div class="bottom-charts-wrapper">
+            <!-- 主体底部表格容器 左侧 -->
+            <div id="bottom-left-charts"></div>
+
+            <!-- 主体底部表格容器 右侧 -->
+            <div id="bottom-right-charts"></div>
+
+        </div>
+    </main>
+
+    <!-- 底部大容器 -->
+    <footer>
+        <!-- 底部中间容器 -->
+        <div class="footer-wrap">
+            <!-- 底部内容容器 -->
+            <div class="footer-content">
+                <!--底部内容 -->
+                <div id="footer-data">
+                    <a href="javascript:;">LOGO</a>
+                    <ul>
+                        <li>NEWS</li>
+                        <li>CHANNELS</li>
+                        <li>OVERVIEW</li>
+                        <li>TIMELINE</li>
+                    </ul>
+                    <ul>
+                        <li>GDSGR</li>
+                        <li><a href="#">CULTURE</a></li>
+                        <li>GHTS</li>
+                        <li>JGRDGS</li>
+                    </ul>
+                    <ul>
+                        <li>NGHSAGTR</li>
+                        <li>FHDHT</li>
+                        <li>JYEY</li>
+                        <li>FGAIRG</li>
+                    </ul>
+                    <ul>
+                        <li>AETCG</li>
+                        <li>FGIAAE</li>
+                        <li>HTER</li>
+                        <li>TV</li>
+                    </ul>
+                    <ul>
+                        <li>HTJDA</li>
+                        <li>EHTSAR</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
